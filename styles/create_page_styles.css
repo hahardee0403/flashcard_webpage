@@ -5,10 +5,22 @@
   
 body{
     background: #023047;
-    padding: 20px 258px;
 }
-
-.title{
+#main_con{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    
+    border: 1px solid #FB8500;
+}
+#title_con{
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    gap: 2em;
+    /* border: 1px solid #dd1ba9; */
+}
+#title{
     color: #FB8500;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Roboto;
@@ -19,8 +31,7 @@ body{
     letter-spacing: 4.96px;
     text-transform: capitalize;
 }
-
-.back_button{
+#back_button{
     width: 135px;
     height: 64px;
     flex-shrink: 0;
@@ -34,11 +45,21 @@ body{
     text-transform: uppercase;
     border: none;
     border-radius: 15px;
-    transform: scale(1);
-    transition: transform 0.3s ease;
 }
 
-.name, .subject{
+#form_con{
+    width: 100%;
+    border: 1px solid #FFF;
+}
+.input_con{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-items: center;
+    border: 1px solid #dd1ba9;
+}
+
+#name, #subject{
     color: #FB8500;
     font-family: Roboto;
     font-size: 37px;
@@ -56,14 +77,14 @@ body{
 }
 
 #name_input{
-    width: 701px;
+    width: 100%;
 }
 
 #subject_input{
-    width: 640px;
+    width: 100%;
 }
 
-.import_button{
+#import_button{
     width: 60px;
     height: 60px;
     flex-shrink: 0;
@@ -71,14 +92,12 @@ body{
     color: #FFF;
     border: none;
     border-radius: 100%;
-    transform: scale(1);
-    transition: transform 0.3s ease;
     font-family: Roboto;
     font-size: 41px;
     text-transform: uppercase;
 }
 
-.import_label{
+#import_label{
     color: #FFF;
     font-family: Roboto;
     font-size: 36px;
@@ -86,7 +105,7 @@ body{
     text-transform: uppercase;
 }
 
-.create_button{
+#create_button{
     width: 267px;
     height: 85px;
     flex-shrink: 0;
@@ -99,10 +118,12 @@ body{
     line-height: normal;
     border: none;
     border-radius: 40px;
+}
+
+.button{
     transform: scale(1);
     transition: transform 0.3s ease;
 }
-
-.back_button:hover, .import_button:hover, .create_button:hover{
+.button:hover{
     transform: scale(1.05);
 }

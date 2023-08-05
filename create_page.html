@@ -7,18 +7,28 @@
     <title>Create a Deck</title>
   </head>
   <body>
-    <h1 class="title">Create a new deck</h1>
-    <a href="index.html"><button class="back_button">back</button></a>
-    <form action="process_data.php" method="post">
-      <label class="name" for="name">Name:</label>
-      <input type="text" id="name_input" name="name" required />
-      <br />
-      <label class="subject" for="subject">Subject:</label>
-      <input type="text" id="subject_input" name="subject" required />
-      <br />
-    </form>
-    <button class="import_button">+</button>
-    <p class="import_label">import file</p>
-    <a href="study_page.html"><button class="create_button">Create</button></a>
+    <div id="main_con">
+      <div id="title_con">
+        <h1 id="title">Create a new deck</h1>
+        <a href="index.html"><button id="back_button", class="button">back</button></a>
+      </div>
+      <form id="form_con" action="process_data.php" method="post">
+        <div id="name_con" class="input_con">
+          <label id="name" for="name">Name:</label>
+          <input type="text" id="name_input" name="name" required />
+          <br />
+        </div>
+        <div id="subject_con" class="input_con">
+          <label id="subject" for="subject">Subject:</label>
+          <input type="text" id="subject_input" name="subject" required />
+          <br />
+        </div>
+        <div>
+          <button id="import_button" class="button">+</button>
+          <p id="import_label">import file</p>
+        </div>
+      </form>
+      <a href="study_page.html"><button id="create_button" class="button">Create</button></a>
+    </div>
   </body>
 </html>
