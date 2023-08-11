@@ -1,129 +1,125 @@
+/* Fonts */
 @font-face {
     font-family: 'Roboto';
     src: url('fonts/Roboto-Bold.ttf') format('truetype');
-}
+  }
   
-body{
+  /* Global Styles */
+  body {
     background: #023047;
-}
-#main_con{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+  }
+  
+  /* Main Container */
+  #main_con {
     display: grid;
     grid-template-columns: auto;
     place-items: center;
-    
     border: 1px solid #FB8500;
-}
-#title_con{
+    padding: 20px;
+  }
+  
+  /* Title Container */
+  #title_con {
     display: grid;
     grid-template-columns: auto auto;
     place-items: center;
     gap: 2em;
-    /* border: 1px solid #dd1ba9; */
-}
-#title{
+  }
+  
+  #title {
     color: #FB8500;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Roboto;
     font-size: 62px;
     font-style: normal;
-    font-weight: 720;
-    line-height: normal;
-    letter-spacing: 4.96px;
-    text-transform: capitalize;
-}
-#back_button{
-    width: 135px;
-    height: 64px;
-    flex-shrink: 0;
-    background-color: #219EBC;
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 28px;
-    font-style: normal;
     font-weight: 900;
     line-height: normal;
+    text-transform: capitalize;
+  }
+  
+  /* Back Button */
+  #back_button {
+    width: 135px;
+    height: 64px;
+    background-color: #219EBC;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 900;
     text-transform: uppercase;
     border: none;
     border-radius: 15px;
-}
-
-#form_con{
+  }
+  
+  /* Form Container */
+  #form_con {
     width: 100%;
     border: 1px solid #FFF;
-}
-.input_con{
+    padding: 20px;
+  }
+  
+  .input_con {
     width: 100%;
     display: grid;
     grid-template-columns: 30% 70%;
     place-items: center;
     border: 1px solid #dd1ba9;
-}
-
-#name, #subject{
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .input_con label {
     color: #FB8500;
     font-family: Roboto;
     font-size: 37px;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
     text-transform: uppercase;
-}
-
-#name_input, #subject_input{
-    font-size:x-large;
+  }
+  
+  .input_con input {
+    font-size: x-large;
     height: 45px;
-    flex-shrink: 0;
     border-radius: 15px;
-}
-
-#name_input{
     width: 100%;
-}
-
-#subject_input{
-    width: 100%;
-}
-
-#import_button{
+  }
+  
+  /* Import Button */
+  #import_button {
     width: 60px;
     height: 60px;
-    flex-shrink: 0;
     background-color: #FFB703;
     color: #FFF;
     border: none;
     border-radius: 100%;
-    font-family: Roboto;
     font-size: 41px;
     text-transform: uppercase;
-}
-
-#import_label{
+  }
+  
+  /* Import Label */
+  #import_label {
     color: #FFF;
-    font-family: Roboto;
     font-size: 36px;
     letter-spacing: -1.08px;
     text-transform: uppercase;
-}
-
-#create_button{
+  }
+  
+  /* Create Button */
+  #create_button {
     width: 267px;
     height: 85px;
-    flex-shrink: 0;
     background-color: #FFB703;
     color: #FFF;
-    font-family: Roboto;
     font-size: 37px;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
     border: none;
     border-radius: 40px;
-}
-
-.button{
-    transform: scale(1);
+    cursor: pointer;
     transition: transform 0.3s ease;
-}
-.button:hover{
+  }
+  
+  .create_button:hover {
     transform: scale(1.05);
-}
+  }
+  
