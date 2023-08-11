@@ -19,6 +19,7 @@
     place-items: center;
     border: 1px solid #FB8500;
     padding: 20px;
+    animation: fadeIn 1s ease-in-out;
   }
   
   /* Title Container */
@@ -95,6 +96,11 @@
     border-radius: 100%;
     font-size: 41px;
     text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .import:hover #import_button {
+    transform: scale(1.2);
   }
   
   /* Import Label */
@@ -116,10 +122,20 @@
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
   }
   
-  .create_button:hover {
+  #create_button:hover {
     transform: scale(1.05);
+  }
+  
+/* nag add ko some fade epekz */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   
